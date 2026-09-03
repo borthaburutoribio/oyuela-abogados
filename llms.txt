@@ -12,13 +12,16 @@
 - Horario: lunes a viernes, 9:00 a 18:00 h
 
 ## Páginas
-- [Inicio](https://borthaburutoribio.github.io/oyuela-abogados/): perfil, resumen de áreas, principales clientes.
-- [El Estudio](https://borthaburutoribio.github.io/oyuela-abogados/el-estudio.html): perfil completo, principios, trayectoria y equipo.
-- [Áreas de práctica](https://borthaburutoribio.github.io/oyuela-abogados/areas-de-practica.html): 14 especialidades y preguntas frecuentes.
-- [Corresponsales](https://borthaburutoribio.github.io/oyuela-abogados/corresponsales.html): red en más de 20 países y en todas las provincias argentinas.
-- [Contacto](https://borthaburutoribio.github.io/oyuela-abogados/contacto.html): dirección, teléfono, correo y mapa.
+- [Inicio](https://borthaburutoribio.github.io/oyuela-abogados/)
+- [Nuestro Perfil](https://borthaburutoribio.github.io/oyuela-abogados/perfil.html): filosofía del Estudio y Código de Ética.
+- [Antecedentes](https://borthaburutoribio.github.io/oyuela-abogados/antecedentes.html): trayectoria y equipo (contenido en preparación).
+- [Servicios](https://borthaburutoribio.github.io/oyuela-abogados/servicios.html): 14 áreas de práctica y preguntas frecuentes.
+- [Principales Clientes](https://borthaburutoribio.github.io/oyuela-abogados/clientes.html): bancos, servicios públicos, seguros, cámaras y automotrices.
+- [Corresponsales](https://borthaburutoribio.github.io/oyuela-abogados/corresponsales.html): red en cerca de veinte países y en gran parte de las provincias argentinas.
+- [Links de Interés](https://borthaburutoribio.github.io/oyuela-abogados/links.html): actividades y prensa, códigos, organismos y bibliotecas.
+- [Contáctenos](https://borthaburutoribio.github.io/oyuela-abogados/contacto.html): dirección, teléfono, correo y mapa.
 
-## Áreas de práctica
+## Servicios
 Derecho societario y bancario; contratos comerciales; derecho laboral y de la
 seguridad social; defensa del consumidor; contratos de distribución, licencia y
 franquicia; derecho administrativo; seguros y derecho ambiental; recupero de
@@ -27,5 +30,6 @@ construcción; sucesiones y asuntos de familia; mediaciones y arbitrajes;
 representación y patrocinio judicial.
 
 ## Notas
-- Contenido de "Trayectoria" y biografías del equipo: pendiente de confirmación del cliente.
+- Contenido de "Antecedentes" y biografías del equipo: pendiente de confirmación del cliente.
+- Algunos enlaces externos de "Links de Interés" provienen del sitio anterior y están pendientes de revisión.
 - Sitio informativo; no constituye asesoramiento legal ni relación profesional.
