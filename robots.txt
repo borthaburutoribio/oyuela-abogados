@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://borthaburutoribio.github.io/oyuela-abogados/sitemap.xml

@@ -1,0 +1,31 @@
+# Oyuela & Asociados — Abogados
+
+> Estudio jurídico en la Ciudad de Buenos Aires. Servicio profesional individual,
+> independiente y personal, sin delegar la actividad ni la relación con el cliente.
+> Trayectoria en el asesoramiento a entidades financieras y empresas nacionales e
+> internacionales.
+
+## Datos de contacto
+- Dirección: Cerrito 1130, piso 6º (C1010AAX), Ciudad Autónoma de Buenos Aires, Argentina
+- Teléfono: (54 11) 5235-8800
+- Correo: oyuela@oyuela.com
+- Horario: lunes a viernes, 9:00 a 18:00 h
+
+## Páginas
+- [Inicio](https://borthaburutoribio.github.io/oyuela-abogados/): perfil, resumen de áreas, principales clientes.
+- [El Estudio](https://borthaburutoribio.github.io/oyuela-abogados/el-estudio.html): perfil completo, principios, trayectoria y equipo.
+- [Áreas de práctica](https://borthaburutoribio.github.io/oyuela-abogados/areas-de-practica.html): 14 especialidades y preguntas frecuentes.
+- [Corresponsales](https://borthaburutoribio.github.io/oyuela-abogados/corresponsales.html): red en más de 20 países y en todas las provincias argentinas.
+- [Contacto](https://borthaburutoribio.github.io/oyuela-abogados/contacto.html): dirección, teléfono, correo y mapa.
+
+## Áreas de práctica
+Derecho societario y bancario; contratos comerciales; derecho laboral y de la
+seguridad social; defensa del consumidor; contratos de distribución, licencia y
+franquicia; derecho administrativo; seguros y derecho ambiental; recupero de
+créditos; reestructuración de deudas; concursos y quiebras; derecho de la
+construcción; sucesiones y asuntos de familia; mediaciones y arbitrajes;
+representación y patrocinio judicial.
+
+## Notas
+- Contenido de "Trayectoria" y biografías del equipo: pendiente de confirmación del cliente.
+- Sitio informativo; no constituye asesoramiento legal ni relación profesional.
