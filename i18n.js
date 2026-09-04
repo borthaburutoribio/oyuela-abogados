@@ -45,7 +45,7 @@
     "home.doc": "Oyuela & Asociados — Attorneys, City of Buenos Aires",
     "home.hero.eyebrow": "Attorneys",
     "home.hero.h1": "Law firm in the City of Buenos Aires",
-    "home.hero.sub": "The firm provides an individual, independent and personalised professional service, handling each area of practice autonomously.",
+    "home.hero.sub": "An individual, independent and personalised professional service.",
     "home.hero.btn_serv": "Services",
     "home.hero.btn_cont": "Contact us",
     "home.dir.eyebrow": "Sections",

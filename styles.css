@@ -204,7 +204,10 @@ p { margin: 0 0 1rem; }
   .hero .wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); }
 }
 @media (max-width: 899px) {
-  .hero__figure { display: none; }
+  /* en celular la imagen va arriba del texto, como banda */
+  .hero .wrap { gap: 1.35rem; padding-block: clamp(1.1rem, 3.5vw, 1.6rem) clamp(1.75rem, 6vw, 2.25rem); }
+  .hero__figure { order: -1; margin-inline: calc(-1 * var(--gutter)); }
+  .hero__figure img { height: 175px; max-height: none; border-left: 0; border-right: 0; }
 }
 
 /* --------------------------------------------------------------- buttons */
