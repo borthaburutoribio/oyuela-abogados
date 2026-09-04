@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Corresponsales en el país y en el exterior | Oyuela &amp; Asociados</title>
+<title data-i18n-doc="corr.doc">Corresponsales en el país y en el exterior | Oyuela &amp; Asociados</title>
 <meta name="description" content="Red de corresponsales de Oyuela &amp; Asociados: estudios asociados en cerca de veinte países del exterior y en gran parte de las provincias argentinas.">
 <link rel="canonical" href="https://borthaburutoribio.github.io/oyuela-abogados/corresponsales.html">
 <meta name="robots" content="index,follow">
@@ -16,13 +16,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" crossorigin="">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Saltar al contenido</a>
+<a class="skip-link" href="#main" data-i18n="common.skip">Saltar al contenido</a>
 
 <div class="topbar">
   <div class="wrap">
+    <button class="lang-toggle" type="button" aria-label="Switch to English">EN</button>
+    <span class="topbar__spacer"></span>
     <a href="tel:+541152358800">Tel (54 11) 5235-8800</a>
     <span class="topbar__sep">·</span>
     <a href="mailto:oyuela@oyuela.com">oyuela@oyuela.com</a>
@@ -35,16 +38,16 @@
       <span class="brand__name">Oyuela &amp; Asociados</span>
       <span class="brand__kicker"><i>Abogados</i></span>
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú" data-i18n-aria="common.menu.open"><span></span></button>
     <nav class="primary-nav" id="menu" aria-label="Principal">
       <ul>
-        <li><a href="perfil.html">Nuestro Perfil</a></li>
-        <li><a href="antecedentes.html">Antecedentes</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="clientes.html">Principales Clientes</a></li>
-        <li><a href="corresponsales.html" aria-current="page">Corresponsales</a></li>
-        <li><a href="links.html">Links de Interés</a></li>
-        <li><a href="contacto.html">Contáctenos</a></li>
+        <li><a href="perfil.html" data-i18n="nav.perfil">Nuestro Perfil</a></li>
+        <li><a href="antecedentes.html" data-i18n="nav.antecedentes">Antecedentes</a></li>
+        <li><a href="servicios.html" data-i18n="nav.servicios">Servicios</a></li>
+        <li><a href="clientes.html" data-i18n="nav.clientes">Principales Clientes</a></li>
+        <li><a href="corresponsales.html" aria-current="page" data-i18n="nav.corresponsales">Corresponsales</a></li>
+        <li><a href="links.html" data-i18n="nav.links">Links de Interés</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contacto">Contáctenos</a></li>
       </ul>
     </nav>
   </div>
@@ -55,22 +58,38 @@
   <section class="hero">
     <div class="wrap">
       <div class="hero__text">
-      <p class="hero__eyebrow">Corresponsales</p>
-      <h1>Corresponsales en el país y en el exterior</h1>
-      <p class="hero__sub">Estudios asociados en cerca de veinte países del exterior y en gran parte de las provincias argentinas.</p>
+      <p class="hero__eyebrow" data-i18n="corr.hero.eyebrow">Corresponsales</p>
+      <h1 data-i18n="corr.hero.h1">Corresponsales en el país y en el exterior</h1>
+      <p class="hero__sub" data-i18n="corr.hero.sub">Estudios asociados en cerca de veinte países del exterior y en gran parte de las provincias argentinas.</p>
       </div>
       <figure class="hero__figure"><img src="assets/img/legislatura-portena.jpg" width="810" height="418" alt="Palacio de la Legislatura de la Ciudad de Buenos Aires" loading="lazy"></figure>
     </div>
   </section>
 
+  <section class="section" aria-labelledby="corr-map-h">
+    <div class="wrap corr-map">
+      <div class="corr-map__head">
+        <h2 class="section__title" id="corr-map-h" data-i18n="corr.map.title">La red, de un vistazo</h2>
+        <div class="corr-map__tabs" role="group" aria-label="Vista del mapa">
+          <button type="button" data-view="ext" aria-pressed="true" data-i18n="corr.map.tab_ext">Exterior</button>
+          <button type="button" data-view="arg" aria-pressed="false" data-i18n="corr.map.tab_arg">Argentina</button>
+        </div>
+      </div>
+      <p class="corr-map__hint" data-i18n="corr.map.hint">Elegí un punto para abrir su ficha en el listado de abajo.</p>
+      <div id="corr-map" role="application" aria-label="Mapa de corresponsales"></div>
+    </div>
+  </section>
+
+  </section>
+
   <section class="section">
     <div class="wrap">
-      <p class="section__eyebrow">En el exterior</p>
-      <h2 class="section__title">Corresponsales internacionales</h2>
+      <p class="section__eyebrow" data-i18n="corr.ext.eyebrow">En el exterior</p>
+      <h2 class="section__title" data-i18n="corr.ext.title">Corresponsales internacionales</h2>
       <div class="accordion mt-2">
 
-        <details>
-          <summary>Alemania</summary>
+        <details id="x-alemania">
+          <summary data-i18n="corr.c.alemania">Alemania</summary>
           <div class="panel">
             <p class="corr"><span class="city">Berlín</span><strong>JGS Rechtsanwaltsgesellschaft mbH</strong>Dr. Jörg G. Schumacher · Forum Zehlendorf, Teltower Damm 35, 14169 Berlín · Tel. 49 (0) 30 816 8530</p>
             <p class="corr"><span class="city">Bonn</span><strong>Heinze &amp; Heinze</strong>Dra. Claudia Heinze · Brentanostraße 23, 53113 Bonn · Tel. (0228) 233033</p>
@@ -80,129 +99,129 @@
           </div>
         </details>
 
-        <details>
-          <summary>Australia</summary>
+        <details id="x-australia">
+          <summary data-i18n="corr.c.australia">Australia</summary>
           <div class="panel">
             <p class="corr"><span class="city">Sídney</span><strong>Dominic David — Stamford</strong>Level 12, 74 Castlereagh Street, Sídney NSW 2000 · Tel. (61-2) 9223 9660</p>
           </div>
         </details>
 
-        <details>
-          <summary>Bélgica</summary>
+        <details id="x-belgica">
+          <summary data-i18n="corr.c.belgica">Bélgica</summary>
           <div class="panel">
             <p class="corr"><span class="city">Bruselas</span><strong>Van Lindt &amp; Associés</strong>32 Av. Louise, Bte 33, B-1050 Bruselas · Tel. (00322) 511-2042</p>
           </div>
         </details>
 
-        <details>
-          <summary>China</summary>
+        <details id="x-china">
+          <summary data-i18n="corr.c.china">China</summary>
           <div class="panel">
             <p class="corr"><span class="city">Shanghái</span><strong>An Guang Law Firm</strong>D&amp;S International Legal Group · Shanghái, China</p>
           </div>
         </details>
 
-        <details>
-          <summary>Estados Unidos de América</summary>
+        <details id="x-eeuu">
+          <summary data-i18n="corr.c.eeuu">Estados Unidos de América</summary>
           <div class="panel">
             <p class="corr"><span class="city">Nueva York</span><strong>H. Klessen</strong>341 Gage Road, Brewster, Nueva York · Tel. 001 914 278 1670</p>
             <p class="corr"><span class="city">Florida</span><strong>Attorneys and Counselors at Law</strong>Clemens W. Pauly · 815 Ponce de León Boulevard, Coral Gables, Florida · Tel. 001 305 461 5667</p>
           </div>
         </details>
 
-        <details>
-          <summary>Francia</summary>
+        <details id="x-francia">
+          <summary data-i18n="corr.c.francia">Francia</summary>
           <div class="panel">
             <p class="corr"><span class="city">París</span><strong>Weil &amp; Associés</strong>272 Rue du Faubourg Saint-Honoré, París · Tel. 00331 44159898</p>
           </div>
         </details>
 
-        <details>
-          <summary>Finlandia</summary>
+        <details id="x-finlandia">
+          <summary data-i18n="corr.c.finlandia">Finlandia</summary>
           <div class="panel">
             <p class="corr"><span class="city">Helsinki</span><strong>Patrick Lindgren &amp; Co.</strong>Salomonkatu 17 A, 00100 Helsinki · Tel. 00358 0 70019730</p>
           </div>
         </details>
 
-        <details>
-          <summary>Gran Bretaña</summary>
+        <details id="x-granbretana">
+          <summary data-i18n="corr.c.granbretana">Gran Bretaña</summary>
           <div class="panel">
             <p class="corr"><span class="city">Londres</span><strong>Picton Howell Solicitors</strong>45 Mortimer Street, W1N 7TD, Londres · Tel. 0044 020 7544 2548</p>
           </div>
         </details>
 
-        <details>
-          <summary>Grecia</summary>
+        <details id="x-grecia">
+          <summary data-i18n="corr.c.grecia">Grecia</summary>
           <div class="panel">
             <p class="corr"><span class="city">Atenas</span><strong>B. Papawassiliou-Schreckenberg &amp; F. Fuhr-Georgantzas</strong>Akademias 43, GR-106 72 Atenas · Tel. (0030-1) 3624973</p>
           </div>
         </details>
 
-        <details>
-          <summary>Hungría</summary>
+        <details id="x-hungria">
+          <summary data-i18n="corr.c.hungria">Hungría</summary>
           <div class="panel">
             <p class="corr"><span class="city">Budapest</span><strong>Dr. György Aranyi</strong>Bocskai u. 1. I/3, H-1114 Budapest · Tel. (00361) 3869144</p>
           </div>
         </details>
 
-        <details>
-          <summary>India</summary>
+        <details id="x-india">
+          <summary data-i18n="corr.c.india">India</summary>
           <div class="panel">
             <p class="corr"><span class="city">Nueva Delhi</span><strong>L. Nageswara Rao</strong>D&amp;S International Legal Group · Nueva Delhi, India</p>
           </div>
         </details>
 
-        <details>
-          <summary>Italia</summary>
+        <details id="x-italia">
+          <summary data-i18n="corr.c.italia">Italia</summary>
           <div class="panel">
             <p class="corr"><span class="city">Bolzano</span><strong>Dr. Günther Rotter</strong>Wangergasse 11, 39100 Bolzano</p>
             <p class="corr"><span class="city">Roma</span><strong>Studio Legale Palermo</strong>Largo della Gancia 1, 00195 Roma · Tel. 0039 06 862103454</p>
           </div>
         </details>
 
-        <details>
-          <summary>Luxemburgo</summary>
+        <details id="x-luxemburgo">
+          <summary data-i18n="corr.c.luxemburgo">Luxemburgo</summary>
           <div class="panel">
             <p class="corr"><span class="city">Luxemburgo</span><strong>Turk &amp; Prum</strong>13B Avenue Guillaume, L-1651 Luxemburgo · Tel. 00352 450</p>
           </div>
         </details>
 
-        <details>
-          <summary>Nueva Zelanda</summary>
+        <details id="x-nuevazelanda">
+          <summary data-i18n="corr.c.nuevazelanda">Nueva Zelanda</summary>
           <div class="panel">
             <p class="corr"><span class="city">Dunedin</span><strong>Woodhouse Partners — Barristers &amp; Solicitors</strong>6º piso, National Mutual Building, George Street, P.O. Box 525, Dunedin, Nueva Zelanda</p>
           </div>
         </details>
 
-        <details>
-          <summary>Portugal</summary>
+        <details id="x-portugal">
+          <summary data-i18n="corr.c.portugal">Portugal</summary>
           <div class="panel">
             <p class="corr"><span class="city">Lisboa</span><strong>Lino de Castro, Horta e Costa &amp; Associados</strong>R. Marquês de Fronteira 111, 3º, 1070-292 Lisboa · Tel. 00351 1 3871621</p>
           </div>
         </details>
 
-        <details>
-          <summary>Polonia</summary>
+        <details id="x-polonia">
+          <summary data-i18n="corr.c.polonia">Polonia</summary>
           <div class="panel">
             <p class="corr"><span class="city">Lublin</span><strong>Polsko-Niemieckie</strong>Ul. Wieniawska 6/6-11, PL-20-071 Lublin · Tel. 0048 81 5323297</p>
           </div>
         </details>
 
-        <details>
-          <summary>Sudáfrica</summary>
+        <details id="x-sudafrica">
+          <summary data-i18n="corr.c.sudafrica">Sudáfrica</summary>
           <div class="panel">
             <p class="corr"><strong>Brink Cohen Le Roux &amp; Roodt</strong>D&amp;S International Legal Group</p>
           </div>
         </details>
 
-        <details>
-          <summary>Suiza</summary>
+        <details id="x-suiza">
+          <summary data-i18n="corr.c.suiza">Suiza</summary>
           <div class="panel">
             <p class="corr"><span class="city">Zúrich</span><strong>Dr. Fehr, Dr. Kull &amp; Balmer</strong>Glockengasse 18, Postfach 7275, Zúrich · Tel. 0041 1 2118500</p>
           </div>
         </details>
 
-        <details>
-          <summary>Uruguay</summary>
+        <details id="x-uruguay">
+          <summary data-i18n="corr.c.uruguay">Uruguay</summary>
           <div class="panel">
             <p class="corr"><span class="city">Montevideo</span><strong>Zimalkowski – Lanzani</strong>Av. 18 de Julio 1805, 11200 Montevideo · Tel. 005982 4023181</p>
           </div>
@@ -214,12 +233,12 @@
 
   <section class="section section--parchment">
     <div class="wrap">
-      <p class="section__eyebrow">En Argentina</p>
-      <h2 class="section__title">Corresponsales en el país</h2>
+      <p class="section__eyebrow" data-i18n="corr.arg.eyebrow">En Argentina</p>
+      <h2 class="section__title" data-i18n="corr.arg.title">Corresponsales en el país</h2>
       <div class="accordion mt-2">
 
-        <details>
-          <summary>Provincia de Buenos Aires</summary>
+        <details id="p-buenos-aires">
+          <summary data-i18n="corr.p.buenos-aires">Provincia de Buenos Aires</summary>
           <div class="panel">
             <p class="corr"><span class="city">Azul</span><strong>Dres. Moreira · Zabala · Maceira</strong>Uriburu 893 · Tel. (02281) 42-5326</p>
             <p class="corr"><span class="city">Bahía Blanca</span><strong>Dres. Sahores – Budasi</strong>Güemes 40 · Tel. (0291) 452-3546</p>
@@ -238,119 +257,119 @@
           </div>
         </details>
 
-        <details>
-          <summary>Córdoba</summary>
+        <details id="p-cordoba">
+          <summary data-i18n="corr.p.cordoba">Córdoba</summary>
           <div class="panel">
             <p class="corr"><span class="city">Córdoba</span><strong>Dr. Jorge Escalera</strong>Obispo Trejo 417, piso 7 · Tel. (0351) 422-6322</p>
           </div>
         </details>
 
-        <details>
-          <summary>Chaco</summary>
+        <details id="p-chaco">
+          <summary data-i18n="corr.p.chaco">Chaco</summary>
           <div class="panel">
             <p class="corr"><span class="city">Resistencia</span><strong>Dra. Katz</strong>Salta 671 · Tel./Fax (03722) 44-4312</p>
           </div>
         </details>
 
-        <details>
-          <summary>Chubut</summary>
+        <details id="p-chubut">
+          <summary data-i18n="corr.p.chubut">Chubut</summary>
           <div class="panel">
             <p class="corr"><span class="city">Trelew</span><strong>Dr. Ricardo Lens</strong>Julio A. Roca 92 · Tel. (03965) 42-0326</p>
             <p class="corr"><span class="city">Comodoro Rivadavia</span><strong>Dr. Gerardo Pedro Benjamín Myburg</strong>Rawson 757 · Tel. (0397) 446-3569</p>
           </div>
         </details>
 
-        <details>
-          <summary>Corrientes</summary>
+        <details id="p-corrientes">
+          <summary data-i18n="corr.p.corrientes">Corrientes</summary>
           <div class="panel">
             <p class="corr"><span class="city">Corrientes</span><strong>Dra. Katz</strong>Rioja 731 · Tel./Fax (03783) 42-2242</p>
           </div>
         </details>
 
-        <details>
-          <summary>Formosa</summary>
+        <details id="p-formosa">
+          <summary data-i18n="corr.p.formosa">Formosa</summary>
           <div class="panel">
             <p class="corr"><span class="city">Resistencia</span><strong>Dra. Katz</strong>Salta 671 · Tel./Fax (03722) 44-4312 / 44-0039</p>
           </div>
         </details>
 
-        <details>
-          <summary>Jujuy</summary>
+        <details id="p-jujuy">
+          <summary data-i18n="corr.p.jujuy">Jujuy</summary>
           <div class="panel">
             <p class="corr"><span class="city">Salta</span><strong>Dr. Alberto R. Sosa</strong>Balcarce 474 · Tel. (0388) 431-0134</p>
           </div>
         </details>
 
-        <details>
-          <summary>La Pampa</summary>
+        <details id="p-la-pampa">
+          <summary data-i18n="corr.p.la-pampa">La Pampa</summary>
           <div class="panel">
             <p class="corr"><span class="city">Santa Rosa</span><strong>Dr. Raúl Biscay</strong>Leandro N. Alem 694 · Tel. (02954) 42-6205</p>
           </div>
         </details>
 
-        <details>
-          <summary>Mendoza</summary>
+        <details id="p-mendoza">
+          <summary data-i18n="corr.p.mendoza">Mendoza</summary>
           <div class="panel">
             <p class="corr"><span class="city">Mendoza</span><strong>Dr. Cuervo</strong>Avda. España 596, piso 1 · Tel./Fax (0261) 429-2468</p>
           </div>
         </details>
 
-        <details>
-          <summary>Neuquén</summary>
+        <details id="p-neuquen">
+          <summary data-i18n="corr.p.neuquen">Neuquén</summary>
           <div class="panel">
             <p class="corr"><span class="city">Neuquén</span><strong>Dr. Fernando Ghisini</strong>Belgrano 705 · Tel. (0299) 448-6426</p>
           </div>
         </details>
 
-        <details>
-          <summary>Río Negro</summary>
+        <details id="p-rio-negro">
+          <summary data-i18n="corr.p.rio-negro">Río Negro</summary>
           <div class="panel">
             <p class="corr"><span class="city">General Roca</span><strong>Dr. Adolfo C. Nielsen</strong>Mitre 810, piso 2, Of. 7 y 8 · Tel. (02941) 42-2509</p>
             <p class="corr"><span class="city">Viedma</span><strong>Dr. Rubén Sella y Dra. Patricia Falca</strong>Tucumán 150 · Tel. (02920) 42-3266 · Dr. Luis A. Courtaux · Tel. (02944) 42-5662 / 42-4723</p>
           </div>
         </details>
 
-        <details>
-          <summary>Salta</summary>
+        <details id="p-salta">
+          <summary data-i18n="corr.p.salta">Salta</summary>
           <div class="panel">
             <p class="corr"><span class="city">Salta</span><strong>Dr. Alberto R. Sosa</strong>Balcarce 474 · Tel. (0387) 43-10134</p>
           </div>
         </details>
 
-        <details>
-          <summary>San Luis</summary>
+        <details id="p-san-luis">
+          <summary data-i18n="corr.p.san-luis">San Luis</summary>
           <div class="panel">
             <p class="corr"><span class="city">San Luis</span><strong>Dr. Guillermo Belgrano Rawson</strong>Rawson 964 · Tel./Fax (02652) 42-4468</p>
           </div>
         </details>
 
-        <details>
-          <summary>Santa Fe</summary>
+        <details id="p-santa-fe">
+          <summary data-i18n="corr.p.santa-fe">Santa Fe</summary>
           <div class="panel">
             <p class="corr"><span class="city">Rosario</span><strong>Estudio Romera, Ongay y Romano</strong>Italia 779, PB 1 · Tel. (0341) 449-6688</p>
           </div>
         </details>
 
-        <details>
-          <summary>Tucumán</summary>
+        <details id="p-tucuman">
+          <summary data-i18n="corr.p.tucuman">Tucumán</summary>
           <div class="panel">
             <p class="corr"><span class="city">Tucumán</span><strong>Dr. Mario Aramayo</strong>San Martín 623 · Tel./Fax (0381) 422-9558</p>
           </div>
         </details>
 
       </div>
-      <p class="mt-2" style="color:var(--ink-soft);font-size:.9rem">Datos de contacto de corresponsales según los registros del Estudio; sujetos a verificación y actualización.</p>
+      <p class="mt-2" style="color:var(--ink-soft);font-size:.9rem" data-i18n="corr.note">Datos de contacto de corresponsales según los registros del Estudio; sujetos a verificación y actualización.</p>
     </div>
   </section>
 
   <section class="section section--band">
     <div class="wrap">
-      <p class="section__eyebrow">Contáctenos</p>
-      <h2 class="section__title">Contáctenos</h2>
-      <p class="section__lead">Para coordinar una entrevista, escriba a oyuela@oyuela.com o llame al (54 11) 5235-8800.</p>
+      <p class="section__eyebrow" data-i18n="cta.eyebrow">Contáctenos</p>
+      <h2 class="section__title" data-i18n="cta.title">Contáctenos</h2>
+      <p class="section__lead" data-i18n="cta.lead">Para coordinar una entrevista, escriba a oyuela@oyuela.com o llame al (54 11) 5235-8800.</p>
       <div class="hero__actions">
-        <a class="btn" href="contacto.html">Ir a contacto</a>
-        <a class="btn btn--ghost" href="mailto:oyuela@oyuela.com">Escribir un correo</a>
+        <a class="btn" href="contacto.html" data-i18n="cta.btn_ir">Ir a contacto</a>
+        <a class="btn btn--ghost" href="mailto:oyuela@oyuela.com" data-i18n="cta.btn_mail">Escribir un correo</a>
       </div>
     </div>
   </section>
@@ -362,42 +381,45 @@
     <div>
       <span class="brand__name">Oyuela &amp; Asociados</span>
       <span class="brand__kicker"><i>Abogados</i></span>
-      <p style="margin-top:1rem">Cerrito 1130, piso 6º — (C1010AAX)<br>Ciudad Autónoma de Buenos Aires, Argentina</p>
+      <p style="margin-top:1rem" data-i18n-html="footer.addr">Cerrito 1130, piso 6º — (C1010AAX)<br>Ciudad Autónoma de Buenos Aires, Argentina</p>
       <p><a href="tel:+541152358800">Tel (54 11) 5235-8800</a><br><a href="mailto:oyuela@oyuela.com">oyuela@oyuela.com</a></p>
       <button class="share-btn" type="button" data-share>
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm16-7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm0 14a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" stroke="currentColor" stroke-width="1.6"/><path d="m8 10 8-4M8 14l8 4" stroke="currentColor" stroke-width="1.6"/></svg>
-        Compartir
+        <span data-i18n="common.share">Compartir</span>
       </button>
     </div>
     <div>
-      <h4>Secciones</h4>
+      <h4 data-i18n="footer.secciones">Secciones</h4>
       <ul>
-        <li><a href="perfil.html">Nuestro Perfil</a></li>
-        <li><a href="antecedentes.html">Antecedentes</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="clientes.html">Principales Clientes</a></li>
-        <li><a href="corresponsales.html">Corresponsales</a></li>
-        <li><a href="links.html">Links de Interés</a></li>
-        <li><a href="contacto.html">Contáctenos</a></li>
+        <li><a href="perfil.html" data-i18n="nav.perfil">Nuestro Perfil</a></li>
+        <li><a href="antecedentes.html" data-i18n="nav.antecedentes">Antecedentes</a></li>
+        <li><a href="servicios.html" data-i18n="nav.servicios">Servicios</a></li>
+        <li><a href="clientes.html" data-i18n="nav.clientes">Principales Clientes</a></li>
+        <li><a href="corresponsales.html" data-i18n="nav.corresponsales">Corresponsales</a></li>
+        <li><a href="links.html" data-i18n="nav.links">Links de Interés</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contacto">Contáctenos</a></li>
       </ul>
     </div>
     <div>
-      <h4>Estudio</h4>
+      <h4 data-i18n="footer.estudio">Estudio</h4>
       <ul>
-        <li><a href="mapa-del-sitio.html">Mapa del sitio</a></li>
-        <li>Lunes a viernes</li>
-        <li>9:00 – 18:00 h</li>
+        <li><a href="mapa-del-sitio.html" data-i18n="footer.mapa">Mapa del sitio</a></li>
+        <li data-i18n="footer.weekdays">Lunes a viernes</li>
+        <li data-i18n="footer.hours">9:00 – 18:00 h</li>
       </ul>
     </div>
   </div>
-  <p class="footer-legal">© <span data-year>2026</span> Oyuela &amp; Asociados. Cerrito 1130, piso 6º — (C1010AAX) Ciudad Autónoma de Buenos Aires, Argentina — Tel (54 11) 5235-8800</p>
+  <p class="footer-legal" data-i18n-html="footer.legal">© <span data-year>2026</span> Oyuela &amp; Asociados. Cerrito 1130, piso 6º — (C1010AAX) Ciudad Autónoma de Buenos Aires, Argentina — Tel (54 11) 5235-8800</p>
 </footer>
 
 <nav class="mobile-cta" aria-label="Acciones rápidas">
-  <a href="tel:+541152358800">Llamar</a>
-  <a class="is-alt" href="mailto:oyuela@oyuela.com">Escribir</a>
+  <a href="tel:+541152358800" data-i18n="common.call">Llamar</a>
+  <a class="is-alt" href="mailto:oyuela.com" data-i18n="common.write">Escribir</a>
 </nav>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin=""></script>
+<script src="corresponsales.js"></script>
 </body>
 </html>
