@@ -25,6 +25,16 @@
     el.textContent = String(new Date().getFullYear());
   });
 
+  // ---- Aviso de envío del formulario ----------------------------------
+  if (location.search.indexOf("ok=1") !== -1) {
+    var ok = document.getElementById("form-ok");
+    if (ok) {
+      ok.classList.add("is-visible");
+      ok.setAttribute("role", "status");
+      ok.scrollIntoView({ block: "center" });
+    }
+  }
+
   // ---- Botón compartir --------------------------------------------------
   document.querySelectorAll("[data-share]").forEach(function (btn) {
     btn.addEventListener("click", async function () {

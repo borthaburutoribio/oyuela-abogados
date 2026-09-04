@@ -77,15 +77,64 @@
 
   <section class="hero">
     <div class="wrap">
-      <p class="hero__eyebrow">Contáctenos</p>
       <h1>Contáctenos</h1>
-      <p class="hero__sub">Datos de contacto del Estudio. Para coordinar una entrevista, escriba o llame en el horario de atención.</p>
+      <p class="hero__sub">Complete el formulario o escriba directamente al Estudio para coordinar una entrevista.</p>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="formulario">
     <div class="wrap">
       <div class="contact-grid">
+
+        <div>
+          <p class="section__eyebrow">Formulario de contacto</p>
+          <h2 class="section__title">Envíe su consulta</h2>
+
+          <div class="form__ok" id="form-ok">
+            Gracias por su consulta. El Estudio se pondrá en contacto a la brevedad.
+          </div>
+
+          <form class="form mt-2" action="https://formsubmit.co/oyuela@oyuela.com" method="POST">
+            <input type="hidden" name="_subject" value="Consulta desde el sitio — Oyuela &amp; Asociados">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://borthaburutoribio.github.io/oyuela-abogados/contacto.html?ok=1#formulario">
+            <input type="text" name="_honey" class="form__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="form__row">
+              <label for="f-empresa">Empresa</label>
+              <input type="text" id="f-empresa" name="Empresa" autocomplete="organization">
+            </div>
+            <div class="form__row">
+              <label for="f-nombre">Nombre <span aria-hidden="true">*</span></label>
+              <input type="text" id="f-nombre" name="Nombre" required autocomplete="given-name">
+            </div>
+            <div class="form__row">
+              <label for="f-apellido">Apellido <span aria-hidden="true">*</span></label>
+              <input type="text" id="f-apellido" name="Apellido" required autocomplete="family-name">
+            </div>
+            <div class="form__row">
+              <label for="f-telefono">Teléfono</label>
+              <input type="tel" id="f-telefono" name="Teléfono" autocomplete="tel">
+            </div>
+            <div class="form__row">
+              <label for="f-email">E-mail <span aria-hidden="true">*</span></label>
+              <input type="email" id="f-email" name="E-mail" required autocomplete="email">
+            </div>
+            <div class="form__row">
+              <label for="f-consulta">Consulta <span aria-hidden="true">*</span></label>
+              <textarea id="f-consulta" name="Consulta" required></textarea>
+            </div>
+
+            <p class="form__req">* Datos obligatorios</p>
+            <div class="form__actions">
+              <button type="submit" class="btn">Enviar</button>
+              <button type="reset" class="btn">Borrar</button>
+            </div>
+          </form>
+
+          <p style="margin-top:1.5rem;color:var(--ink-soft);font-size:.9rem">La consulta inicial no genera relación profesional hasta la aceptación expresa del caso por el Estudio. La información enviada se trata de forma confidencial.</p>
+        </div>
+
         <div>
           <p class="section__eyebrow">Datos</p>
           <h2 class="section__title">Estudio en Buenos Aires</h2>
@@ -107,18 +156,14 @@
               <span>Lunes a viernes, de 9:00 a 18:00 h</span>
             </li>
           </ul>
-          <div class="hero__actions" style="margin-top:2rem">
-            <a class="btn" href="mailto:oyuela@oyuela.com?subject=Consulta%20-%20Oyuela%20%26%20Asociados">Escribir un correo</a>
-            <a class="btn btn--navy" href="tel:+541152358800">Llamar ahora</a>
+          <div class="map-embed mt-2">
+            <iframe
+              title="Mapa: Cerrito 1130, Ciudad Autónoma de Buenos Aires"
+              src="https://www.google.com/maps?q=Cerrito%201130%2C%20Buenos%20Aires%2C%20Argentina&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <p style="margin-top:1.5rem;color:var(--ink-soft);font-size:.9rem">La consulta inicial no genera relación profesional hasta la aceptación expresa del caso por el Estudio. La información enviada por correo se trata de forma confidencial.</p>
         </div>
-        <div class="map-embed">
-          <iframe
-            title="Mapa: Cerrito 1130, Ciudad Autónoma de Buenos Aires"
-            src="https://www.google.com/maps?q=Cerrito%201130%2C%20Buenos%20Aires%2C%20Argentina&output=embed"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+
       </div>
     </div>
   </section>
