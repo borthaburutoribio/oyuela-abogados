@@ -285,11 +285,9 @@
     document.documentElement.setAttribute("lang", lang);
     refreshYear();
 
-    var btn = document.querySelector(".lang-toggle");
-    if (btn) {
-      btn.textContent = lang === "en" ? "ES" : "EN";
-      btn.setAttribute("aria-label", lang === "en" ? "Cambiar a español" : "Switch to English");
-    }
+    document.querySelectorAll(".lang-switch [data-lang]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
+    });
     document.dispatchEvent(new CustomEvent("langchange", { detail: { lang: lang } }));
   }
 
@@ -308,12 +306,9 @@
 
   function init() {
     apply(current());
-    var btn = document.querySelector(".lang-toggle");
-    if (btn) {
-      btn.addEventListener("click", function () {
-        set(document.documentElement.getAttribute("lang") === "en" ? "es" : "en");
-      });
-    }
+    document.querySelectorAll(".lang-switch [data-lang]").forEach(function (b) {
+      b.addEventListener("click", function () { set(b.dataset.lang); });
+    });
   }
 
   window.OAi18n = {

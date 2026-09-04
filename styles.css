@@ -75,13 +75,23 @@ p { margin: 0 0 1rem; }
 .topbar a:hover { text-decoration: underline; }
 .topbar__sep { opacity: .4; }
 .topbar__spacer { flex: 1; }
-.lang-toggle {
-  font: inherit; font-size: .74rem; font-weight: 700; letter-spacing: .1em;
-  color: #dbe4ea; background: transparent;
-  border: 1px solid rgba(255,255,255,.35); border-radius: 2px;
-  padding: .18rem .55rem; cursor: pointer; line-height: 1;
+.lang-switch {
+  display: inline-flex; align-items: stretch;
+  border: 1px solid rgba(255,255,255,.3); border-radius: 3px; overflow: hidden;
 }
-.lang-toggle:hover { background: rgba(255,255,255,.12); border-color: #fff; color: #fff; }
+.lang-switch button {
+  display: inline-flex; align-items: center; gap: .32rem;
+  font: inherit; font-size: .68rem; font-weight: 700; letter-spacing: .05em;
+  color: #b9c6d1; background: transparent; border: 0; cursor: pointer;
+  padding: .22rem .5rem; line-height: 1;
+}
+.lang-switch button + button { border-left: 1px solid rgba(255,255,255,.22); }
+.lang-switch button svg {
+  display: block; width: 15px; height: 11px; border-radius: 1px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.18);
+}
+.lang-switch button:hover { color: #fff; }
+.lang-switch button[aria-pressed="true"] { background: rgba(255,255,255,.16); color: #fff; }
 
 .site-header {
   position: sticky; top: 0; z-index: 50;
@@ -447,8 +457,12 @@ details.corr-target { animation: corrFlash 1.4s ease; }
   .mobile-cta { display: grid; }
   body { padding-bottom: 52px; }
 }
+@media (max-width: 640px) {
+  /* teléfono y correo ya están en el pie y en la barra fija inferior */
+  .topbar a[href^="tel"], .topbar a[href^="mailto"], .topbar__sep, .topbar__spacer { display: none; }
+  .topbar .wrap { justify-content: flex-start; }
+}
 @media (max-width: 520px) {
   .site-footer .wrap { grid-template-columns: 1fr; }
   .client-cols { columns: 1; }
-  .topbar .wrap { justify-content: center; }
 }
