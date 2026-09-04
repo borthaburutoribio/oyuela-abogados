@@ -82,25 +82,43 @@ p { margin: 0 0 1rem; }
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; min-height: 82px; max-width: 1260px; }
 
-/* wordmark — mismo logotipo tipográfico del sitio original */
+/* wordmark — réplica del logotipo del sitio original:
+   "OYUELA & ASOCIADOS" y, debajo, "ABOGADOS" espaciado entre dos filetes */
 .brand { display: flex; flex-direction: column; text-decoration: none; line-height: 1; }
 .brand__name {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(1.1rem, 2.3vw, 1.4rem);
-  letter-spacing: .06em;
-  color: #2b2b2b;
+  font-size: clamp(1.1rem, 2.3vw, 1.42rem);
+  letter-spacing: .08em;
+  color: #3a3a3a;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .brand__kicker {
+  display: flex;
+  align-items: center;
+  gap: .6em;
+  margin-top: .5rem;
   font-family: var(--serif);
-  font-size: .64rem;
-  letter-spacing: .5em;
+  font-size: .62rem;
   text-transform: uppercase;
-  color: #6b7176;
-  margin-top: .42rem;
-  padding-left: .1em;
+  color: #8c8c8c;
 }
+.brand__kicker::before,
+.brand__kicker::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: currentColor;
+  opacity: .55;
+}
+.brand__kicker i {
+  font-style: normal;
+  letter-spacing: .55em;
+  margin-right: -.55em;   /* compensa el tracking final para centrar */
+}
+.site-footer .brand__name { color: #3a3a3a; }
+.site-footer .brand__kicker { color: #8c8c8c; }
 
 /* nav */
 .nav-toggle {

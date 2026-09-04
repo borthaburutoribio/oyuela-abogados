@@ -14,7 +14,7 @@
 ## Páginas
 - [Inicio](https://borthaburutoribio.github.io/oyuela-abogados/)
 - [Nuestro Perfil](https://borthaburutoribio.github.io/oyuela-abogados/perfil.html): filosofía del Estudio y Código de Ética.
-- [Antecedentes](https://borthaburutoribio.github.io/oyuela-abogados/antecedentes.html): trayectoria y equipo (contenido en preparación).
+- [Antecedentes](https://borthaburutoribio.github.io/oyuela-abogados/antecedentes.html): sección sin contenido por ahora.
 - [Servicios](https://borthaburutoribio.github.io/oyuela-abogados/servicios.html): 14 áreas de práctica y preguntas frecuentes.
 - [Principales Clientes](https://borthaburutoribio.github.io/oyuela-abogados/clientes.html): bancos, servicios públicos, seguros, cámaras y automotrices.
 - [Corresponsales](https://borthaburutoribio.github.io/oyuela-abogados/corresponsales.html): red en cerca de veinte países y en gran parte de las provincias argentinas.
