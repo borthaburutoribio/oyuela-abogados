@@ -77,94 +77,98 @@
 
   <section class="hero">
     <div class="wrap">
+      <div class="hero__text">
       <h1>Contáctenos</h1>
       <p class="hero__sub">Complete el formulario o escriba directamente al Estudio para coordinar una entrevista.</p>
+      </div>
+      <figure class="hero__figure"><img src="assets/img/congreso-nacion.jpg" width="1200" height="489" alt="Palacio del Congreso de la Nación Argentina, en la Ciudad de Buenos Aires" loading="lazy"></figure>
     </div>
   </section>
 
-  <section class="section" id="formulario">
+  <section class="section">
     <div class="wrap">
-      <div class="contact-grid">
-
-        <div>
-          <p class="section__eyebrow">Formulario de contacto</p>
-          <h2 class="section__title">Envíe su consulta</h2>
-
-          <div class="form__ok" id="form-ok">
-            Gracias por su consulta. El Estudio se pondrá en contacto a la brevedad.
-          </div>
-
-          <form class="form mt-2" action="https://formsubmit.co/oyuela@oyuela.com" method="POST">
-            <input type="hidden" name="_subject" value="Consulta desde el sitio — Oyuela &amp; Asociados">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://borthaburutoribio.github.io/oyuela-abogados/contacto.html?ok=1#formulario">
-            <input type="text" name="_honey" class="form__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-            <div class="form__row">
-              <label for="f-empresa">Empresa</label>
-              <input type="text" id="f-empresa" name="Empresa" autocomplete="organization">
-            </div>
-            <div class="form__row">
-              <label for="f-nombre">Nombre <span aria-hidden="true">*</span></label>
-              <input type="text" id="f-nombre" name="Nombre" required autocomplete="given-name">
-            </div>
-            <div class="form__row">
-              <label for="f-apellido">Apellido <span aria-hidden="true">*</span></label>
-              <input type="text" id="f-apellido" name="Apellido" required autocomplete="family-name">
-            </div>
-            <div class="form__row">
-              <label for="f-telefono">Teléfono</label>
-              <input type="tel" id="f-telefono" name="Teléfono" autocomplete="tel">
-            </div>
-            <div class="form__row">
-              <label for="f-email">E-mail <span aria-hidden="true">*</span></label>
-              <input type="email" id="f-email" name="E-mail" required autocomplete="email">
-            </div>
-            <div class="form__row">
-              <label for="f-consulta">Consulta <span aria-hidden="true">*</span></label>
-              <textarea id="f-consulta" name="Consulta" required></textarea>
-            </div>
-
-            <p class="form__req">* Datos obligatorios</p>
-            <div class="form__actions">
-              <button type="submit" class="btn">Enviar</button>
-              <button type="reset" class="btn">Borrar</button>
-            </div>
-          </form>
-
-          <p style="margin-top:1.5rem;color:var(--ink-soft);font-size:.9rem">La consulta inicial no genera relación profesional hasta la aceptación expresa del caso por el Estudio. La información enviada se trata de forma confidencial.</p>
+      <p class="section__eyebrow">Datos</p>
+      <h2 class="section__title">Estudio en Buenos Aires</h2>
+      <div class="contact-grid mt-2">
+        <ul class="contact-list">
+          <li>
+            <span class="lbl">Dirección</span>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Cerrito%201130%2C%20Buenos%20Aires" target="_blank" rel="noopener">Cerrito 1130, piso 6º — (C1010AAX)<br>Ciudad Autónoma de Buenos Aires, Argentina</a>
+          </li>
+          <li>
+            <span class="lbl">Teléfono</span>
+            <a href="tel:+541152358800">(54 11) 5235-8800</a>
+          </li>
+          <li>
+            <span class="lbl">Correo electrónico</span>
+            <a href="mailto:oyuela@oyuela.com">oyuela@oyuela.com</a>
+          </li>
+          <li>
+            <span class="lbl">Horario de atención</span>
+            <span>Lunes a viernes, de 9:00 a 18:00 h</span>
+          </li>
+        </ul>
+        <div class="map-embed">
+          <iframe
+            title="Mapa: Cerrito 1130, Ciudad Autónoma de Buenos Aires"
+            src="https://www.google.com/maps?q=Cerrito%201130%2C%20Buenos%20Aires%2C%20Argentina&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-        <div>
-          <p class="section__eyebrow">Datos</p>
-          <h2 class="section__title">Estudio en Buenos Aires</h2>
-          <ul class="contact-list mt-2">
-            <li>
-              <span class="lbl">Dirección</span>
-              <a href="https://www.google.com/maps/search/?api=1&amp;query=Cerrito%201130%2C%20Buenos%20Aires" target="_blank" rel="noopener">Cerrito 1130, piso 6º — (C1010AAX)<br>Ciudad Autónoma de Buenos Aires, Argentina</a>
-            </li>
-            <li>
-              <span class="lbl">Teléfono</span>
-              <a href="tel:+541152358800">(54 11) 5235-8800</a>
-            </li>
-            <li>
-              <span class="lbl">Correo electrónico</span>
-              <a href="mailto:oyuela@oyuela.com">oyuela@oyuela.com</a>
-            </li>
-            <li>
-              <span class="lbl">Horario de atención</span>
-              <span>Lunes a viernes, de 9:00 a 18:00 h</span>
-            </li>
-          </ul>
-          <div class="map-embed mt-2">
-            <iframe
-              title="Mapa: Cerrito 1130, Ciudad Autónoma de Buenos Aires"
-              src="https://www.google.com/maps?q=Cerrito%201130%2C%20Buenos%20Aires%2C%20Argentina&output=embed"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-
       </div>
+    </div>
+  </section>
+
+  <section class="section section--mist" id="formulario">
+    <div class="wrap">
+      <p class="section__eyebrow">Formulario de contacto</p>
+      <h2 class="section__title">Envíe su consulta</h2>
+
+      <div class="form__ok" id="form-ok">
+        Gracias por su consulta. El Estudio se pondrá en contacto a la brevedad.
+      </div>
+
+      <form class="form form--wide mt-2" action="https://formsubmit.co/oyuela@oyuela.com" method="POST">
+        <input type="hidden" name="_subject" value="Consulta desde el sitio — Oyuela &amp; Asociados">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://borthaburutoribio.github.io/oyuela-abogados/contacto.html?ok=1#formulario">
+        <input type="text" name="_honey" class="form__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="form__fields">
+          <div class="form__row">
+            <label for="f-empresa">Empresa</label>
+            <input type="text" id="f-empresa" name="Empresa" autocomplete="organization">
+          </div>
+          <div class="form__row">
+            <label for="f-nombre">Nombre <span aria-hidden="true">*</span></label>
+            <input type="text" id="f-nombre" name="Nombre" required autocomplete="given-name">
+          </div>
+          <div class="form__row">
+            <label for="f-apellido">Apellido <span aria-hidden="true">*</span></label>
+            <input type="text" id="f-apellido" name="Apellido" required autocomplete="family-name">
+          </div>
+          <div class="form__row">
+            <label for="f-telefono">Teléfono</label>
+            <input type="tel" id="f-telefono" name="Teléfono" autocomplete="tel">
+          </div>
+          <div class="form__row">
+            <label for="f-email">E-mail <span aria-hidden="true">*</span></label>
+            <input type="email" id="f-email" name="E-mail" required autocomplete="email">
+          </div>
+        </div>
+
+        <div class="form__row form__row--msg">
+          <label for="f-consulta">Consulta <span aria-hidden="true">*</span></label>
+          <textarea id="f-consulta" name="Consulta" required></textarea>
+        </div>
+
+        <p class="form__req">* Datos obligatorios</p>
+        <div class="form__actions">
+          <button type="submit" class="btn">Enviar</button>
+          <button type="reset" class="btn">Borrar</button>
+        </div>
+      </form>
+
+      <p style="margin-top:1.5rem;color:var(--ink-soft);font-size:.9rem">La consulta inicial no genera relación profesional hasta la aceptación expresa del caso por el Estudio. La información enviada se trata de forma confidencial.</p>
     </div>
   </section>
 
