@@ -47,7 +47,7 @@ p { margin: 0 0 1rem; }
 
 /* --------------------------------------------------------------- layout */
 .wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); }
-.section { padding-block: clamp(2.75rem, 7vw, 4.5rem); }
+.section { padding-block: clamp(2.25rem, 5vw, 3.5rem); }
 .section--mist,
 .section--parchment { background: var(--mist); }
 .section--band,
@@ -96,9 +96,11 @@ p { margin: 0 0 1rem; }
 .site-header {
   position: sticky; top: 0; z-index: 50;
   background: var(--paper);
-  border-bottom: 1px solid var(--rule);
 }
-.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; min-height: 82px; max-width: 1260px; }
+.site-header__row {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1.25rem; min-height: 72px; max-width: 1260px;
+}
 
 /* wordmark — réplica del logotipo del sitio original:
    "OYUELA & ASOCIADOS" y, debajo, "ABOGADOS" espaciado entre dos filetes */
@@ -143,31 +145,39 @@ p { margin: 0 0 1rem; }
   display: none;
   border: 1px solid var(--rule);
   background: var(--paper);
-  width: 44px; height: 44px;
+  width: 44px; height: 40px; border-radius: 2px;
   align-items: center; justify-content: center;
   cursor: pointer;
 }
 .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after {
-  content: ""; display: block; width: 20px; height: 2px; background: var(--blue-ink); position: relative;
+  content: ""; display: block; width: 20px; height: 2px; background: var(--blue); position: relative;
 }
 .nav-toggle span::before { position: absolute; top: -6px; }
 .nav-toggle span::after  { position: absolute; top: 6px; }
 
-.primary-nav ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: clamp(.5rem, 1.15vw, .95rem); margin: 0; padding: 0; }
-.primary-nav a {
-  font-family: var(--sans);
-  font-size: .68rem;
-  font-weight: 700;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  color: var(--blue-dark);
-  text-decoration: none;
-  padding: .5rem 0;
-  border-bottom: 2px solid transparent;
-  white-space: nowrap;
+/* barra de navegación azul, como el sitio histórico de Oyuela */
+.primary-nav {
+  background: var(--blue);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
 }
-.primary-nav a:hover,
-.primary-nav a[aria-current="page"] { border-bottom-color: var(--blue); }
+.primary-nav > .wrap { max-width: 1260px; }
+.primary-nav ul {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; justify-content: center;
+}
+.primary-nav li { display: flex; }
+.primary-nav li + li a { border-left: 1px solid rgba(255,255,255,.14); }
+.primary-nav a {
+  display: flex; align-items: center;
+  font-family: var(--sans); font-size: .71rem; font-weight: 700;
+  letter-spacing: .09em; text-transform: uppercase;
+  color: #e9f0f5; text-decoration: none;
+  padding: .92rem 1.05rem; line-height: 1;
+  transition: background-color .12s ease, color .12s ease;
+}
+.primary-nav a:hover { background: rgba(0,0,0,.18); color: #fff; }
+.primary-nav a[aria-current="page"] { background: var(--blue-dark); color: #fff; }
+.primary-nav .nav-home svg { display: block; }
 
 /* ---------------------------------------------------------------- hero */
 .hero {
@@ -204,17 +214,20 @@ p { margin: 0 0 1rem; }
   .hero .wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); }
 }
 @media (max-width: 899px) {
-  /* en celular la imagen va arriba del texto, como banda */
-  .hero .wrap { gap: 1.35rem; padding-block: clamp(1.1rem, 3.5vw, 1.6rem) clamp(1.75rem, 6vw, 2.25rem); }
+  /* en celular la imagen es una franja corta arriba del texto */
+  .hero .wrap { gap: 1.15rem; padding-block: clamp(1.1rem, 3.5vw, 1.5rem) clamp(1.5rem, 5vw, 2rem); }
   .hero__figure { order: -1; margin-inline: calc(-1 * var(--gutter)); }
-  .hero__figure img { height: 175px; max-height: none; border-left: 0; border-right: 0; }
+  .hero__figure img { height: 132px; max-height: none; border-left: 0; border-right: 0; }
+  .hero h1 { font-size: clamp(1.5rem, 6vw, 1.9rem); }
+  .hero__sub { font-size: 1rem; }
+  .hero__actions { margin-top: 1.25rem; }
 }
 
 /* --------------------------------------------------------------- buttons */
 .btn {
   display: inline-flex; align-items: center;
-  font-family: var(--sans); font-weight: 700; font-size: .78rem;
-  letter-spacing: .08em; text-transform: uppercase;
+  font-family: var(--sans); font-weight: 700; font-size: .8rem;
+  letter-spacing: .02em;
   padding: .8rem 1.35rem;
   background: var(--blue); color: #fff;
   border: 1px solid var(--blue); border-radius: 2px;
@@ -282,6 +295,19 @@ p { margin: 0 0 1rem; }
 .client-cols { columns: 3 200px; column-gap: 2rem; padding: 0; margin: 0; }
 .client-cols li { break-inside: avoid; padding: .4rem 0; color: var(--ink); font-size: .95rem; border-bottom: 1px solid var(--rule-soft); list-style: none; }
 
+/* muro de marcas / entidades (sin logotipos, versión sobria) */
+.brand-wall {
+  display: grid; gap: 1px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  background: var(--rule); border: 1px solid var(--rule);
+}
+.brand-wall span {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  background: var(--paper); color: var(--ink-soft);
+  font-family: var(--serif); font-size: .92rem; letter-spacing: .01em;
+  padding: 1.1rem .7rem; min-height: 66px;
+}
+
 /* --------------------------------------------------------------- mapa red */
 .corr-map { }
 .corr-map__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem 1rem; margin-bottom: 1rem; }
@@ -299,6 +325,8 @@ p { margin: 0 0 1rem; }
 }
 @media (max-width: 600px) { #corr-map { height: 360px; } }
 .leaflet-container { font: inherit; }
+.leaflet-attribution-flag { display: none !important; }
+.leaflet-control-attribution { font-size: .68rem; background: rgba(255,255,255,.75); }
 .leaflet-popup-content { margin: .7rem .9rem; font-size: .9rem; }
 .leaflet-popup-content strong { display: block; color: var(--blue-ink); font-family: var(--serif); font-size: 1rem; margin-bottom: .1rem; }
 .leaflet-popup-content .corr-map__link {
@@ -448,14 +476,16 @@ details.corr-target { animation: corrFlash 1.4s ease; }
   .nav-toggle { display: inline-flex; }
   .primary-nav {
     position: absolute; left: 0; right: 0; top: 100%;
-    background: var(--paper); border-bottom: 1px solid var(--rule);
     transform: translateY(-8px); opacity: 0; pointer-events: none;
     transition: opacity .15s ease, transform .15s ease;
+    box-shadow: 0 12px 26px rgba(10, 33, 53, .25);
   }
   .primary-nav[data-open="true"] { transform: translateY(0); opacity: 1; pointer-events: auto; }
-  .primary-nav ul { flex-direction: column; gap: 0; padding: .5rem var(--gutter) 1.25rem; }
-  .primary-nav li { border-bottom: 1px solid var(--rule-soft); }
-  .primary-nav a { display: block; padding: .95rem 0; border-bottom: none; }
+  .primary-nav > .wrap { padding: 0; }
+  .primary-nav ul { flex-direction: column; }
+  .primary-nav li { display: block; }
+  .primary-nav li + li a { border-left: 0; border-top: 1px solid rgba(255,255,255,.12); }
+  .primary-nav a { padding: .95rem var(--gutter); }
 
   .mobile-cta { display: grid; }
   body { padding-bottom: 52px; }

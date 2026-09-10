@@ -10,6 +10,7 @@
 
   var EN = {
     /* ---- navegación / chrome ---- */
+    "nav.home": "Home",
     "nav.perfil": "Our Profile",
     "nav.antecedentes": "Background",
     "nav.servicios": "Services",
@@ -75,6 +76,7 @@
     "perfil.li3": "Freedom of decision and intellectual creation",
     "perfil.li4": "Personal duty of professional secrecy",
     "perfil.li5": "Individual professional responsibility",
+    "perfil.trayectoria": "With almost six decades of activity, the firm brings together twenty people —seven of them professionals—, with an in-house collection unit and correspondents across the country, and extensive experience with banking and public-utility delinquent portfolios.",
 
     /* ---- servicios ---- */
     "serv.doc": "Services — Corporate, banking, commercial and insolvency law | Oyuela & Asociados",
@@ -97,9 +99,9 @@
     "serv.s7.t": "Insurance. Environmental law",
     "serv.s7.d": "Insurance contracts, claims and coverage; environmental compliance and contingencies.",
     "serv.s8.t": "Debt recovery",
-    "serv.s8.d": "Judicial and out-of-court management and enforcement of receivables and security.",
+    "serv.s8.d": "Judicial and out-of-court management and enforcement of receivables and security, with an in-house collection unit and case-management systems. Extensive experience with banking and public-utility delinquent portfolios.",
     "serv.s9.t": "Debt restructuring",
-    "serv.s9.d": "Refinancing, creditor arrangements and balance-sheet clean-up.",
+    "serv.s9.d": "Refinancing, creditor arrangements and balance-sheet clean-up, in line with the interest terms and timeframes of each case.",
     "serv.s10.t": "Insolvency and bankruptcy",
     "serv.s10.d": "Reorganisation proceedings, bankruptcy, proof of claims and creditor arrangements.",
     "serv.s11.t": "Construction law",
@@ -132,6 +134,23 @@
     "cli.g5": "Chambers and institutions",
     "cli.g6": "Car dealerships",
     "cli.note": "A partial list, for reference, of clients advised by the firm over the course of its activity.",
+    "cli.wall.eyebrow": "They have trusted the firm",
+    "cli.wall.note": "A selection of brands and entities. Logos can be added once the firm provides them.",
+    "cli.rep.eyebrow": "Representative work",
+    "cli.rep.title": "Some of the engagements entrusted to the firm",
+    "cli.rep.note": "A general summary of engagements; volumes and dates are approximate and based on the firm’s records.",
+    "cli.rep.deutsche": "Judicial and out-of-court portfolio collection, in a professional relationship sustained since 1966.",
+    "cli.rep.comafi": "Judicial and out-of-court collection of delinquent leasing-contract portfolios, on the order of 3,000 cases per month nationwide.",
+    "cli.rep.capita": "Judicial and out-of-court collection of leasing-contract portfolios and commercial advice, since 1996.",
+    "cli.rep.citi": "Judicial and out-of-court handling of unsecured-product portfolios — personal loans, current accounts and credit cards — on the order of 5,000 cases per month.",
+    "cli.rep.credicoop": "Out-of-court collection of unsecured-product portfolios, on the order of 3,000 cases per month nationwide.",
+    "cli.rep.provincia": "Judicial and out-of-court collection of secured and unsecured product portfolios.",
+    "cli.rep.gasban": "Out-of-court collection of delinquent portfolios in the City and Greater Buenos Aires since 1999, over roughly 70,000 accounts.",
+    "cli.rep.aguas": "Out-of-court collection of delinquent portfolios in the City and Greater Buenos Aires, over roughly 19,000 accounts.",
+    "cli.rep.metrogas": "Out-of-court collection of delinquent portfolios in the City and Greater Buenos Aires.",
+    "cli.rep.bonafide": "Franchise and contract management nationwide, since 1996.",
+    "cli.rep.diaz": "Recovery of leasing transactions and dealer fleets (Renault, Fiat, GMC, Nissan, Alfa Romeo, Ford and Peugeot).",
+    "cli.rep.bankboston": "Judicial and out-of-court collection of secured and unsecured product portfolios, on the order of 1,000 cases per month.",
 
     /* ---- corresponsales ---- */
     "corr.doc": "Correspondents in Argentina and abroad | Oyuela & Asociados",
@@ -221,9 +240,28 @@
     "cont.form.borrar": "Clear",
     "cont.form.note": "The initial inquiry does not create a professional relationship until the firm expressly accepts the matter. Information sent is treated confidentially.",
 
-    /* ---- antecedentes / mapa ---- */
+    /* ---- antecedentes ---- */
     "ante.doc": "Background — Oyuela & Asociados",
     "ante.hero.h1": "Background",
+    "ante.hero.sub": "Almost six decades of activity advising financial institutions and companies.",
+    "ante.p1": "The firm has been active for almost six decades in the City of Buenos Aires, Greater Buenos Aires and the interior of the country, advising and representing financial institutions and domestic and international companies.",
+    "ante.p2": "Its structure brings together twenty people, seven of them professionals, with an in-house collection unit and a network of correspondents across the country.",
+    "ante.p3": "Over the years the firm has built extensive experience in handling banking and public-utility delinquent portfolios, in corporate, banking, commercial and insolvency transactions and litigation, and in large-scale debt management and recovery.",
+    "ante.p4": "It has its own technology infrastructure for IT and communications: databases with cross-referenced information, a dialling system, an 0800 support line, in-house servers with network security and encrypted data, and administrative (ERP) and client-relationship (CRM) management systems.",
+    "ante.cifras.title": "The firm in figures",
+    "ante.cifras.k1": "Track record", "ante.cifras.v1": "Almost 60 years of activity",
+    "ante.cifras.k2": "Team", "ante.cifras.v2": "20 members, 7 professionals",
+    "ante.cifras.k3": "Reach", "ante.cifras.v3": "In-house unit and correspondents nationwide",
+    "ante.cifras.k4": "Office", "ante.cifras.v4": "Cerrito 1130, 6th floor, Buenos Aires",
+    "ante.eq.eyebrow": "Team",
+    "ante.eq.title": "The firm’s professionals",
+    "ante.eq.note": "<strong>Pending:</strong> full photographs and biographies to be provided by the firm (education, bar admission, practice areas and publications).",
+    "ante.eq.r1": "Principal", "ante.eq.d1": "Head of the firm. Professional profile to be completed.",
+    "ante.eq.r2": "Professional", "ante.eq.d2": "Public profile available on LinkedIn. Profile to be completed.",
+    "ante.eq.r3": "Team", "ante.eq.h3": "Seven professionals",
+    "ante.eq.d3": "Lawyers and specialised staff in debt collection, litigation and corporate and commercial advice.",
+
+    /* ---- mapa ---- */
     "mapa.doc": "Site map — Oyuela & Asociados",
     "mapa.hero.h1": "Site map",
     "mapa.inicio": "Home"

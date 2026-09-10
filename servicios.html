@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=9">
+<link rel="stylesheet" href="styles.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,14 +48,18 @@
 </div>
 
 <header class="site-header">
-  <div class="wrap">
+  <div class="wrap site-header__row">
     <a class="brand" href="index.html" aria-label="Oyuela &amp; Asociados, inicio">
       <span class="brand__name">Oyuela &amp; Asociados</span>
       <span class="brand__kicker"><i>Abogados</i></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú" data-i18n-aria="common.menu.open"><span></span></button>
-    <nav class="primary-nav" id="menu" aria-label="Principal">
+  </div>
+
+  <nav class="primary-nav" id="menu" aria-label="Principal">
+    <div class="wrap">
       <ul>
+        <li class="nav-home"><a href="index.html" aria-label="Inicio" data-i18n-aria="nav.home"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 9.7 10 4l7 5.7V16a1 1 0 0 1-1 1h-3.2v-4.2H7.2V17H4a1 1 0 0 1-1-1z"/></svg></a></li>
         <li><a href="perfil.html" data-i18n="nav.perfil">Nuestro Perfil</a></li>
         <li><a href="antecedentes.html" data-i18n="nav.antecedentes">Antecedentes</a></li>
         <li><a href="servicios.html" aria-current="page" data-i18n="nav.servicios">Servicios</a></li>
@@ -64,8 +68,8 @@
         <li><a href="links.html" data-i18n="nav.links">Links de Interés</a></li>
         <li><a href="contacto.html" data-i18n="nav.contacto">Contáctenos</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
 <main id="main">
@@ -90,8 +94,8 @@
         <article class="card"><h3 data-i18n="serv.s5.t">Contratos de distribución, licencia y franquicia</h3><p data-i18n="serv.s5.d">Contratos de distribución, concesión, agencia, licencia de marcas y franquicias.</p></article>
         <article class="card"><h3 data-i18n="serv.s6.t">Derecho administrativo</h3><p data-i18n="serv.s6.d">Relación con la Administración, licencias, permisos, reclamos y contencioso administrativo.</p></article>
         <article class="card"><h3 data-i18n="serv.s7.t">Seguros. Derecho ambiental</h3><p data-i18n="serv.s7.d">Contratos de seguro, siniestros y coberturas; cumplimiento y contingencias ambientales.</p></article>
-        <article class="card"><h3 data-i18n="serv.s8.t">Recupero de créditos</h3><p data-i18n="serv.s8.d">Gestión y ejecución judicial y extrajudicial de créditos y garantías.</p></article>
-        <article class="card"><h3 data-i18n="serv.s9.t">Reestructuración de deudas</h3><p data-i18n="serv.s9.d">Refinanciación, acuerdos con acreedores y saneamiento patrimonial.</p></article>
+        <article class="card"><h3 data-i18n="serv.s8.t">Recupero de créditos</h3><p data-i18n="serv.s8.d">Gestión y ejecución judicial y extrajudicial de créditos y garantías, con gestoría propia y sistemas de gestión. Amplia experiencia en carteras de mora bancarias y de servicios públicos.</p></article>
+        <article class="card"><h3 data-i18n="serv.s9.t">Reestructuración de deudas</h3><p data-i18n="serv.s9.d">Refinanciación, acuerdos con acreedores y saneamiento patrimonial, conforme a las pautas de interés y plazos de cada caso.</p></article>
         <article class="card"><h3 data-i18n="serv.s10.t">Concursos y quiebras</h3><p data-i18n="serv.s10.d">Concursos preventivos, quiebras, verificación de créditos y acuerdos preventivos.</p></article>
         <article class="card"><h3 data-i18n="serv.s11.t">Derecho de la construcción</h3><p data-i18n="serv.s11.d">Contratos de obra, responsabilidad de constructores y proyectistas, y reclamos por vicios.</p></article>
         <article class="card"><h3 data-i18n="serv.s12.t">Sucesiones y asuntos de familia</h3><p data-i18n="serv.s12.d">Sucesiones, planificación patrimonial familiar, divorcios y acuerdos.</p></article>
@@ -181,7 +185,7 @@
   <a class="is-alt" href="mailto:oyuela.com" data-i18n="common.write">Escribir</a>
 </nav>
 
-<script src="i18n.js?v=9"></script>
-<script src="script.js?v=9"></script>
+<script src="i18n.js?v=10"></script>
+<script src="script.js?v=10"></script>
 </body>
 </html>

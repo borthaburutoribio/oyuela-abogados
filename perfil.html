@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=9">
+<link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
 <a class="skip-link" href="#main" data-i18n="common.skip">Saltar al contenido</a>
@@ -32,14 +32,18 @@
 </div>
 
 <header class="site-header">
-  <div class="wrap">
+  <div class="wrap site-header__row">
     <a class="brand" href="index.html" aria-label="Oyuela &amp; Asociados, inicio">
       <span class="brand__name">Oyuela &amp; Asociados</span>
       <span class="brand__kicker"><i>Abogados</i></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú" data-i18n-aria="common.menu.open"><span></span></button>
-    <nav class="primary-nav" id="menu" aria-label="Principal">
+  </div>
+
+  <nav class="primary-nav" id="menu" aria-label="Principal">
+    <div class="wrap">
       <ul>
+        <li class="nav-home"><a href="index.html" aria-label="Inicio" data-i18n-aria="nav.home"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 9.7 10 4l7 5.7V16a1 1 0 0 1-1 1h-3.2v-4.2H7.2V17H4a1 1 0 0 1-1-1z"/></svg></a></li>
         <li><a href="perfil.html" aria-current="page" data-i18n="nav.perfil">Nuestro Perfil</a></li>
         <li><a href="antecedentes.html" data-i18n="nav.antecedentes">Antecedentes</a></li>
         <li><a href="servicios.html" data-i18n="nav.servicios">Servicios</a></li>
@@ -48,8 +52,8 @@
         <li><a href="links.html" data-i18n="nav.links">Links de Interés</a></li>
         <li><a href="contacto.html" data-i18n="nav.contacto">Contáctenos</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
 <main id="main">
@@ -68,6 +72,7 @@
     <div class="wrap split">
       <div class="stack">
         <p data-i18n="perfil.p1">El Estudio brinda un servicio profesional individual e independiente en forma personalizada, que atiende autónomamente las respectivas especialidades.</p>
+        <p data-i18n="perfil.trayectoria">Con casi seis décadas de actividad, el Estudio reúne a veinte personas —entre ellas siete profesionales—, con gestoría propia y corresponsales en todo el país, y una vasta experiencia en carteras de mora bancarias y de servicios públicos.</p>
         <p data-i18n="perfil.p2">De este modo se brinda la atención que el cliente necesita en cada caso en forma particular, sin delegar la actividad profesional, para conservar una relación personal propia y directa, sin constituir una sociedad, asociación ni empresa para el ejercicio profesional, a fin de preservar los valores de aplicar individualmente el conocimiento del derecho, la exclusiva libertad de decisión y creación intelectual, así como el arte particular de la estrategia procesal y representación ante los estrados judiciales, y el deber personal del secreto profesional.</p>
         <p data-i18n="perfil.p3">Todo ello sin perjuicio del aprovechamiento de infraestructura de bienes y servicios profesionales, con beneficio para los costos y prestaciones, que se realiza en forma singular con cada uno de los clientes.</p>
         <p data-i18n="perfil.p4">De este modo se cumplen los principios del Código de Ética del Colegio Público de Abogados de la Ciudad de Buenos Aires y se ratifica, en los términos de su artículo 19, la actividad y responsabilidad profesional, estableciendo lo expresado precedentemente como condición general de contratación individual y personal para la actuación profesional.</p>
@@ -140,7 +145,7 @@
   <a class="is-alt" href="mailto:oyuela.com" data-i18n="common.write">Escribir</a>
 </nav>
 
-<script src="i18n.js?v=9"></script>
-<script src="script.js?v=9"></script>
+<script src="i18n.js?v=10"></script>
+<script src="script.js?v=10"></script>
 </body>
 </html>

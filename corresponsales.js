@@ -75,6 +75,7 @@
   };
 
   var map = L.map(el, { scrollWheelZoom: false, zoomControl: true, minZoom: 1, worldCopyJump: true });
+  map.attributionControl.setPrefix("");   /* sin "Leaflet" ni la bandera */
   map.setView([20, 0], 2);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
